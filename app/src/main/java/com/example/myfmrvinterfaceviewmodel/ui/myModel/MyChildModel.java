@@ -7,6 +7,10 @@ public class MyChildModel extends MyParentModel{
     public MyChildModel() {
     }
 
+    public MyChildModel(double rate, int image, String country) {
+        super(rate, image, country);
+    }
+
     public MyChildModel(double rate, double inputValue) {
         super(rate);
         this.result = rate*inputValue;
